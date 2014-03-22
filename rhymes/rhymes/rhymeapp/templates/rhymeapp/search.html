@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <form action="">Find: <input type="text" name="q"><input type="submit">
+    </form>
+    {{ endings }}
+    {% for match in matches %}
+    {{ match.entry }}<br>
+    {% endfor %}
+  </body>
+</html>
